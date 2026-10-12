@@ -1,6 +1,6 @@
 # 🎓 ACU CSE 101: Introduction to Programming — Practice & Workshops
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/acibadam-cse/acu-cse-101-practice)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Krr0ptioN/acu-cse-101-pract-ce)
 
 Welcome to the official student practice workspace for **CSE 101: Introduction to Programming** at **Acıbadem University (2026 Academic Year)**.
 
@@ -20,10 +20,11 @@ In your forked repository, click the green **Code** button, select the **Codespa
 ### Step 3: Start Coding & Check
 1. Open the current week's folder in the left sidebar: [`exercises/week_01_intro/practice.py`](exercises/week_01_intro/practice.py).
 2. Write your code and calculations directly in `practice.py`.
-3. Check and submit your answers using the **clickable GUI buttons**:
-   - **Click `Play`** in the bottom blue status bar (or click the **🧪 Testing icon** in the left sidebar) to check if your answers are correct!
-   - **Click `Submit Practice`** in the bottom status bar when all checks are green to send your work to the TAs for review!
-   - **Click `Sync Course`** in the bottom status bar whenever a new week's exercises are published!
+3. Use the **`$(checklist) Course Tasks`** menu on the left side of the bottom status bar:
+   - **`Run Tests`** checks your answers.
+   - **`Submit`** sends your practice work to the TAs after your tests pass.
+   - **`Sync Course`** downloads newly released weekly exercises.
+   - **`Play`** runs the Python file currently open in the editor.
 
 ---
 
@@ -52,10 +53,17 @@ Exercises are released progressively week by week. Each week's challenge folder 
 
 ---
 
-## 🔄 Keeping Your Workspace Synced (Conflict-Free)
+## 🔄 Automatic Course Updates
 
-When course instructors publish a new weekly challenge, sync it into your workspace with zero merge conflicts:
+Codespaces automatically check for new course materials at startup and every five
+minutes while running. Published weeks appear in the workspace without student
+action. The background watcher saves exercise changes before syncing, keeps
+student answers when updates overlap, and backs up the working branch to the
+student fork. Temporary network or backup failures are logged and retried.
 
-1. Press `Ctrl + Shift + P` (or `Cmd + Shift + P` on Mac).
-2. Choose **Tasks: Run Task** → **`Sync Course`**.
-   *(Alternatively, run `python3 scripts/sync_course.py` in the terminal).*
+The **Sync Course** action in **Course Tasks** is also available for an immediate
+check. Instructor diagnostics are recorded in `.git/auto_commit.log`.
+
+Existing Codespaces that still run the old save-only watcher require a one-time
+instructor-managed rollout of the updated scripts. Publishing to the course
+repository alone cannot replace a process already running in a student Codespace.
