@@ -10,7 +10,7 @@ Replace pass with your code. No input(), loops, or conditions are needed.
 # Goal: print "Welcome to Python!" when say_welcome() is called.
 def say_welcome():
     # TODO: Print the welcome message.
-    pass
+
 
 
 # Part 2: Use a parameter and return a value.
